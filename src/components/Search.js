@@ -21,9 +21,11 @@ const Search = () => {
       setResults(data.query.search)
     }
 
-    if (term) {
-      search()
-    }
+    setTimeout(() => {
+      if (term) {
+        search()
+      }
+    }, 500)
   }, [term])
 
   // Making the list: Looping through the results array
